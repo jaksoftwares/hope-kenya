@@ -10,7 +10,7 @@ import {
   DropdownMenuItem, 
   DropdownMenuTrigger 
 } from '@/components/ui/dropdown-menu';
-import { Menu, Heart, ChevronDown, X } from 'lucide-react';
+import { Menu, Heart, ChevronDown } from 'lucide-react';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -113,21 +113,26 @@ export function Navbar() {
           <div className="xl:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="p-2">
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="p-2"
+                  aria-label="Open menu"
+                >
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[280px] sm:w-[350px] p-0">
+              <SheetContent 
+                side="right" 
+                className="w-[280px] sm:w-[350px] p-0 transition-all duration-300"
+              >
                 <div className="flex flex-col h-full">
                   {/* Mobile Header */}
-                  <div className="flex items-center justify-between p-4 border-b">
+                  <div className="flex items-center p-4 border-b">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
                       <Heart className="h-6 w-6 text-orange-500" />
                       <span className="text-xl font-bold text-gray-900">HopeKenya</span>
                     </Link>
-                    <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-                      <X className="h-5 w-5" />
-                    </Button>
                   </div>
 
                   {/* Mobile Navigation */}
