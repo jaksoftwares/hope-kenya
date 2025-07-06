@@ -1,17 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   output: 'export',
   eslint: {
-    ignoreDuringBuilds: true, // Recommended for static exports
+    ignoreDuringBuilds: true,
   },
   images: { 
     unoptimized: true 
   },
-  // Add these experimental options:
   experimental: {
     esmExternals: 'loose',
     serverComponentsExternalPackages: ['@radix-ui/react-progress']
   }
 };
-
-module.exports = nextConfig;
