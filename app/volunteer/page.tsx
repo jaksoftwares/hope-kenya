@@ -287,7 +287,7 @@ export default function Volunteer() {
                             <Checkbox
                               id={skill}
                               checked={formData.skills.includes(skill)}
-                              onCheckedChange={(checked) => handleSkillChange(skill, checked)}
+                              onCheckedChange={(checked) => handleSkillChange(skill, checked === true)}
                             />
                             <Label htmlFor={skill} className="text-sm">{skill}</Label>
                           </div>
