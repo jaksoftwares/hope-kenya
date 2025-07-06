@@ -7,22 +7,19 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // Add these critical configurations:
   experimental: {
-    esmExternals: false, // Force CommonJS for Radix
-    serverComponentsExternalPackages: ['@radix-ui/react-progress']
+    // Simplified configuration
+    esmExternals: false, // Changed from 'loose' to false
+    serverComponentsExternalPackages: [
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-dropdown-menu'
+      // Only include packages you actually use
+    ],
+    optimizePackageImports: [ // New optimization
+      '@radix-ui/react-*'
+    ]
   },
-  webpack: (config) => {
-    // Force Radix UI to use CommonJS modules
-    config.externals = config.externals || [];
-    config.externals.push(function ({ context, request }, callback) {
-      if (/^@radix-ui/.test(request)) {
-        return callback(null, `commonjs ${request}`);
-      }
-      callback();
-    });
-    return config;
-  }
+  // Remove the webpack config completely
 };
 
 module.exports = nextConfig;
