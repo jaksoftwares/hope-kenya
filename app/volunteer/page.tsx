@@ -146,7 +146,7 @@ export default function Volunteer() {
             Volunteer With Us
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join our community of dedicated volunteers making a real difference in children's lives. 
+            Join our community of dedicated volunteers making a real difference in children&apos;s lives. 
             Your skills, time, and passion can help transform education in Kenya.
           </p>
         </div>
@@ -212,7 +212,7 @@ export default function Volunteer() {
               <CardHeader>
                 <CardTitle className="text-2xl">Volunteer Application</CardTitle>
                 <CardDescription>
-                  Tell us about yourself and how you'd like to contribute to our mission.
+                  Tell us about yourself and how you&apos;d like to contribute to our mission.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -372,7 +372,7 @@ export default function Volunteer() {
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
                   <div>
                     <p className="font-medium">Make Real Impact</p>
-                    <p className="text-sm text-gray-600">Directly contribute to children's education and future</p>
+                    <p className="text-sm text-gray-600">Directly contribute to children&apos;s education and future</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
