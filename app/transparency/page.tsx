@@ -161,7 +161,14 @@ export default function Transparency() {
                         <span>{program.name}</span>
                         <span className="font-semibold">${program.amount.toLocaleString()}</span>
                       </div>
-                      <Progress value={program.percentage} className="h-2" />
+                      <Progress
+                        value={
+                          typeof program.percentage === 'number'
+                            ? Math.max(0, Math.min(100, program.percentage))
+                            : 0
+                        }
+                        className="h-2"
+                      />
                     </div>
                   ))}
                 </div>

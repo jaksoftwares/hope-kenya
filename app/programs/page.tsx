@@ -214,8 +214,15 @@ export default function Programs() {
                             ${program.raised.toLocaleString()} / ${program.budget.toLocaleString()}
                           </span>
                         </div>
-                        <Progress value={(program.raised / program.budget) * 100} className="h-3" />
-                        <div className="text-xs text-gray-600">
+                        <Progress
+                          value={
+                            program.budget > 0
+                              ? Math.max(0, Math.min(100, (program.raised / program.budget) * 100))
+                              : 0
+                          }
+                          className="h-3"
+                        />        
+                <div className="text-xs text-gray-600">
                           {Math.round((program.raised / program.budget) * 100)}% funded
                         </div>
                       </div>

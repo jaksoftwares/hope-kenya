@@ -147,8 +147,14 @@ export default function Impact() {
                     <span className="text-sm font-medium">Progress</span>
                     <span className="text-sm font-bold">{program.progress}%</span>
                   </div>
-                  <Progress value={program.progress} className="h-2" />
-                  
+                    <Progress
+                      value={
+                        typeof program.progress === 'number'
+                          ? Math.max(0, Math.min(100, program.progress))
+                          : 0
+                      }
+                      className="h-2"
+                    />                  
                   <div className="grid grid-cols-2 gap-4 pt-4">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-orange-600">

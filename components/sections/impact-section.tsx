@@ -78,7 +78,14 @@ export function ImpactSection() {
                     <span className="text-gray-600">Progress</span>
                     <span className="font-semibold">{achievement.progress}%</span>
                   </div>
-                  <Progress value={achievement.progress} className="h-2 sm:h-3" />
+                  <Progress 
+                      value={
+                        typeof achievement.progress === 'number'
+                          ? Math.max(0, Math.min(100, achievement.progress))
+                          : 0
+                      }
+                      className="h-2 sm:h-3" 
+                    />
                 </div>
               </CardContent>
             </Card>
@@ -88,10 +95,10 @@ export function ImpactSection() {
         <div className="mt-8 sm:mt-12 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12">
           <div className="text-center">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
-              Together, We're Changing Lives
+              Together, We&apos;re Changing Lives
             </h3>
             <p className="text-base sm:text-lg md:text-xl text-orange-100 mb-6 sm:mb-8 max-w-3xl mx-auto">
-              Every dollar donated directly impacts a child's future. Join our growing community of change-makers.
+              Every dollar donated directly impacts a child&apos;s future. Join our growing community of change-makers.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
               <div className="text-center">
