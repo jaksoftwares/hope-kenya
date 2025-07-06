@@ -63,7 +63,7 @@ export function TestimonialsSection() {
                     ))}
                   </div>
                   <p className="text-gray-700 leading-relaxed italic text-sm sm:text-base">
-                    "{testimonial.content}"
+                    {testimonial.content}
                   </p>
                 </div>
               </CardContent>

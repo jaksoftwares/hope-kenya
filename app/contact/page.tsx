@@ -50,7 +50,7 @@ export default function Contact() {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Have questions about our programs, want to get involved, or need support? 
-            We're here to help and would love to hear from you.
+            We&apos;re here to help and would love to hear from you.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function Contact() {
               <CardHeader>
                 <CardTitle className="text-2xl">Send Us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Fill out the form below and we&apos;ll get back to you as soon as possible.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -206,7 +206,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium mb-2">How are donations used?</h4>
                   <p className="text-sm text-gray-600">
-                    85% goes directly to children's education, 10% to programs, 5% to administration.
+                    85% goes directly to children&apos;s education, 10% to programs, 5% to administration.
                   </p>
                 </div>
               </CardContent>

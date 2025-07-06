@@ -45,7 +45,7 @@ export default function Donate() {
             Make a Donation
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Your generosity directly impacts a child's education and future. 
+            Your generosity directly impacts a child&apos;s education and future. 
             Every dollar helps provide quality education to children in Kenya.
           </p>
         </div>
@@ -242,11 +242,11 @@ export default function Donate() {
               </CardHeader>
               <CardContent className="p-4 sm:p-6 pt-0">
                 <p className="text-xs sm:text-sm text-orange-600 mb-3 sm:mb-4">
-                  Monthly donations provide consistent support and help us plan better for the children's needs.
+                  Monthly donations provide consistent support and help us plan better for the children&apos;s needs.
                 </p>
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-bold text-orange-700">$25/month</div>
-                  <div className="text-xs sm:text-sm text-orange-600">sponsors a child's education</div>
+                  <div className="text-xs sm:text-sm text-orange-600">sponsors a child&apos;s education</div>
                 </div>
               </CardContent>
             </Card>

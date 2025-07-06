@@ -43,7 +43,7 @@ export default function About() {
           </h1>
           <p className="text-xl md:text-2xl text-orange-100 leading-relaxed">
             Empowering children through education, one story at a time. 
-            Learn about our mission, vision, and the impact we're making together.
+            Learn about our mission, vision, and the impact we&apos;re making together.
           </p>
         </div>
       </section>
@@ -101,8 +101,8 @@ export default function About() {
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed">
                 HopeKenya was founded in 2018 by Dr. Mary Wanjiku, a former teacher who witnessed 
-                firsthand the challenges faced by children in Kenya's underserved communities. 
-                After years of teaching in Nairobi's informal settlements, she saw how poverty 
+                firsthand the challenges faced by children in Kenya&apos;s underserved communities. 
+                After years of teaching in Nairobi&apos;s informal settlements, she saw how poverty 
                 prevented bright, ambitious children from accessing quality education.
               </p>
               
@@ -118,7 +118,7 @@ export default function About() {
                 Today, HopeKenya works with a network of dedicated educators, community leaders, 
                 and international supporters to create lasting change. We believe that education 
                 is the most powerful tool for breaking the cycle of poverty and creating a 
-                brighter future for Kenya's children.
+                brighter future for Kenya&apos;s children.
               </p>
             </div>
           </div>

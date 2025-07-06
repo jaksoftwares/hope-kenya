@@ -119,7 +119,7 @@ export default function News() {
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
             Stay informed about our latest achievements, program updates, and the incredible 
-            impact we're making together in children's lives across Kenya.
+            impact we&apos;re making together in children&apos;s lives across Kenya.
           </p>
         </div>
       </section>

@@ -269,7 +269,7 @@ export default function Kids() {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
-              Can't Choose Just One?
+              Can&apos;t Choose Just One?
             </h3>
             <p className="text-base sm:text-lg md:text-xl text-orange-100 mb-4 sm:mb-6">
               Consider making a general donation to support all children in our program.

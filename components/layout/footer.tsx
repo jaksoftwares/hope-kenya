@@ -14,7 +14,7 @@ export function Footer() {
             </div>
             <p className="text-gray-400 leading-relaxed text-sm sm:text-base max-w-md">
               Empowering education and transforming lives of children in Kenya through your generous support. 
-              Together, we're building a brighter future, one child at a time.
+              Together, we&apos;re building a brighter future, one child at a time.
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />

@@ -216,7 +216,7 @@ export default function Stories() {
                       <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
                         <Quote className="h-8 w-8 text-blue-500 mb-4" />
                         <p className="text-blue-800 italic text-lg leading-relaxed">
-                          "{story.quote}"
+                          {story.quote}
                         </p>
                         <p className="text-blue-600 font-semibold mt-2">- {story.name}</p>
                       </div>
@@ -258,7 +258,7 @@ export default function Stories() {
 
                       <div className="pt-4">
                         <p className="text-sm text-gray-600 mb-4">
-                          Stories like {story.name}'s are possible because of generous supporters like you.
+                          Stories like {story.name}&apos;s are possible because of generous supporters like you.
                         </p>
                         <Link href="/donate">
                           <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
