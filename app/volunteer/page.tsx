@@ -12,8 +12,21 @@ import { Badge } from '@/components/ui/badge';
 import { Heart, Users, Clock, MapPin, Send, CheckCircle, Globe, Camera, Laptop, BookOpen } from 'lucide-react';
 import { toast } from 'sonner';
 
+interface VolunteerFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  location: string;
+  skills: string[];
+  availability: string;
+  experience: string;
+  motivation: string;
+  commitment: string;
+}
+
 export default function Volunteer() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<VolunteerFormData>({
     firstName: '',
     lastName: '',
     email: '',
